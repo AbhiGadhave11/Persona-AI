@@ -1,7 +1,7 @@
 import express from 'express';
 import axios from 'axios';
 import cors from 'cors';
-import { OpenAI } from 'openai';
+// import { OpenAI } from 'openai';
 import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from "url";
@@ -28,7 +28,7 @@ app.get("/{*any}", (req, res) => {
 });
 
 
-const client = new OpenAI();
+// const client = new OpenAI();
 
 
 // Persona definitions
