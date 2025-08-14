@@ -3,6 +3,8 @@ import axios from 'axios';
 import cors from 'cors';
 import { OpenAI } from 'openai';
 import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from "url";
 dotenv.config();
 
 const app = express();
@@ -14,11 +16,15 @@ app.use(cors({
   methods: ['GET', 'POST'],
 }));
 
-const path = require('path');
-app.use(express.static(path.join(__dirname, 'dist')));
+// __dirname equivalent in ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+// Serve static files from dist
+app.use(express.static(path.join(__dirname, "dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 
 
