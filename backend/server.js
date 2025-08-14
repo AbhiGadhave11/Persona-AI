@@ -6,14 +6,24 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
-app.use(express.json());
 const PORT = process.env.PORT || 8000;
 
-const client = new OpenAI();
+app.use(express.json());
 app.use(cors({
   origin: 'http://localhost:5173', // Adjust this to your frontend URL
   methods: ['GET', 'POST'],
 }));
+
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'dist')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
+
+
+const client = new OpenAI();
+
 
 // Persona definitions
 const personas = {
