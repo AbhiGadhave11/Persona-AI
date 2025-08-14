@@ -225,7 +225,7 @@ export default function ChatWindow({ persona }) {
     
     try {
       // Send full history to backend
-      const res = await axios.post("http://localhost:8000/api/chat", {
+      const res = await axios.post("https://persona-ai-ro5l.onrender.com/api/chat", {
         personasId: persona?.id,
         message: newMessages.map((m) => ({
           role: m.sender === "user" ? "user" : "assistant",
