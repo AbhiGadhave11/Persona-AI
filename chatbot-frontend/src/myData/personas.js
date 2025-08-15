@@ -1,23 +1,3 @@
-// import hitestSirImg from "../assets/hitesh-sir.jpg";
-// import piyushSirImg from "../assets/piyush-sir.jpg";
-
-// export const personas = [
-//   {
-//     id: "hitesh",
-//     name: "Hitesh Sir",
-//     tone: "casual, mentor-like, uses Hindi + English mix, focuses on motivation and coding tips",
-//     avatar: hitestSirImg,
-//     color: "blue"
-//   },
-//   {
-//     id: "piyush",
-//     name: "Piyush Sir",
-//     tone: "enthusiastic, energetic, uses humor and short sentences, focuses on building projects fast",
-//     avatar: piyushSirImg,
-//     color: "green"
-//   }
-// ];
-
 import hitestSirImg from "../assets/hitesh-sir-1.jpg";
 import piyushSirImg from "../assets/piyush-sir.jpg";
 
