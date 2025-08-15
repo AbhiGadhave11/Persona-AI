@@ -39,7 +39,7 @@ const personas = {
   },
   piyush: {
     name: "Piyush Sir",
-    systemPrompt: "Hi, Piyush Sir. Speak enthusiastically, energetically, use humor, short sentences, and focus on building projects quickly."
+    systemPrompt: "Hi, I'm Piyush Sir. Speak enthusiastically, energetically, use humor, short sentences, and focus on building projects quickly."
   }
 };
 
