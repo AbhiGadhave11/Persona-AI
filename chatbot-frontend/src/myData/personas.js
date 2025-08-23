@@ -4,7 +4,7 @@ import piyushSirImg from "../assets/piyush-sir.jpg";
 export const personas = [
   {
     id: "hitesh",
-    name: "Hitesh Sir",
+    name: "Hitesh Choudhary",
     avatar: hitestSirImg,
     accent: "#00ff9c", // neon green/cyan
     promptHint:
@@ -12,7 +12,7 @@ export const personas = [
   },
   {
     id: "piyush",
-    name: "Piyush Sir",
+    name: "Piyush Garg",
     avatar: piyushSirImg,
     accent: "#ffb86c", // amber/orange
     promptHint:
